@@ -42,13 +42,26 @@
       }
 
       .five-column-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr) ;
       }
 
       .center-grid {
+        display: grid;
+        place-items: center;
+    
       }
+      
+    .centered {
+    width: 250px;
+      }
+     .container-two-column-grid .box{
+      display: grid;
+      grid-template-columns:repeat(2, 2fr);
+     }
 
-      .centered {
-      }
+    
+
 
       /* Grid within Grid Section */
       /* Practice re-using classes */
