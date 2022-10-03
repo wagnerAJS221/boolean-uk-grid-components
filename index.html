@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-
+    <link rel="stylesheet" href="index.css" />
     <style>
       /* Don't touch this START */
 
@@ -32,9 +32,13 @@
       /* Write CSS Here */
 
       .three-column-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .three-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
       }
 
       .five-column-grid {
@@ -49,7 +53,14 @@
       /* Grid within Grid Section */
       /* Practice re-using classes */
 
-      .two-column-grid {
+      .two-column-grid__expand-two {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        border: dotted rgb(1, 1, 1);
+      }
+      .logo {
+        min-width: 100px;
+        border: dotted black;
       }
     </style>
   </head>
